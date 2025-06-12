@@ -16,6 +16,7 @@ This tool not only empowers eco-conscious consumers, but also supports automotiv
 ⚙️ What the Program Does
 
 1. Data Processing & Feature Engineering
+2. 
 - Loads a vehicle dataset with fields like fuel type, fuel consumption, horsepower, and brand.
 - Engineers new features (e.g., Efficiency per HP) to better capture eco-performance.
 - Encodes categorical variables and standardizes numeric data for machine learning.
@@ -31,6 +32,7 @@ Uses Random Forest Classifier, trained with GridSearchCV for optimal performance
 Applies SMOTE oversampling to balance minority (eco-friendly) and majority classes.
 
 3. Output & Insights
+4. 
 Generates:
 - Classification report: Accuracy, Precision, Recall, F1 Score.
 - Confusion matrix and feature importance plot for interpretability.
@@ -101,13 +103,26 @@ Predictions are adjusted using a custom probability threshold for improved perfo
 - Model Deployment
 - Saves the trained Random Forest model (eco_friendly_model.pkl) and label encoders (label_encoders.pkl) for reuse.
 
+# 👤 Target Audience
+Eco-Conscious Consumers
+→ Helps users filter car options based on real-world environmental impact.
+
+Automotive Manufacturers & Product Teams
+→ Gain data-driven insights on what features correlate with eco-friendliness.
+
+Market Researchers & Analysts
+→ Track trends in fuel efficiency and sustainability across brands and segments.
+
+Policymakers & Sustainability Advocates
+→ Use the tool as a model for developing or evaluating green vehicle incentives.
+
+
 # Business Use Cases
 - Assists consumers in choosing sustainable vehicles.
 - Provides manufacturers with data-driven insights to refine eco-friendly vehicle offerings.
 
 # Key Applications:
 - Consumer Guidance: Helps consumers identify eco-friendly cars that align with sustainability goals.
- -Market Research: Assists automotive researchers in analyzing trends and developing greener solutions.
+- Market Research: Assists automotive researchers in analyzing trends and developing greener solutions.
 - Business Strategy: Supports manufacturers in targeting eco-conscious buyers and improving product design.
-
-This project demonstrates advanced data analysis, machine learning, and environmental impact modeling, showcasing expertise in both technical development and practical applications.
+- Product Design: Inform R&D on which engine specs align with environmental benchmarks.
