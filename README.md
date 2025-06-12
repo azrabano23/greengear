@@ -43,28 +43,7 @@ Generates:
 
 4. Model Deployment
    
-Saves trained model and encoders (eco_friendly_model.pkl, label_encoders.pkl) for future reuse or API integration.
-
-👤 Target Audience
-Eco-Conscious Consumers
-→ Helps users filter car options based on real-world environmental impact.
-
-Automotive Manufacturers & Product Teams
-→ Gain data-driven insights on what features correlate with eco-friendliness.
-
-Market Researchers & Analysts
-→ Track trends in fuel efficiency and sustainability across brands and segments.
-
-Policymakers & Sustainability Advocates
-→ Use the tool as a model for developing or evaluating green vehicle incentives.
-
-📌 Key Applications
-🚗 Consumer Guidance: Provide sustainability labels to cars on dealership platforms.
-
-📈 Market Research: Analyze which brands and fuel types are evolving toward greener standards.
-
-🛠️ Product Design: Inform R&D on which engine specs align with environmental benchmarks.
-
+- Saves trained model and encoders (eco_friendly_model.pkl, label_encoders.pkl) for future reuse or API integration.
 
 # Technical Overview:
 
