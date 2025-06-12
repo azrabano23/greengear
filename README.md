@@ -9,6 +9,7 @@ The transportation sector accounts for over 24% of global CO₂ emissions, with 
 Despite the rise of hybrid and electric vehicles, consumers and businesses still struggle to identify which cars are truly eco-friendly based on meaningful performance metrics — not just marketing. Current classification systems often lack consistency, transparency, or adaptability to user-specific needs. There is a pressing need for a data-driven tool that intelligently classifies vehicles based on emissions-related attributes, making sustainability more accessible and measurable.
 
 🌍 Why This Program Matters
+
 Green Gear helps bridge the gap between environmental responsibility and informed consumer choice by using machine learning to classify cars as eco-friendly based on real-world performance indicators like fuel consumption, engine power, and fuel type.
 
 This tool not only empowers eco-conscious consumers, but also supports automotive companies, market analysts, and policy researchers in tracking trends and improving sustainability efforts in the auto industry.
@@ -16,7 +17,7 @@ This tool not only empowers eco-conscious consumers, but also supports automotiv
 ⚙️ What the Program Does
 
 1. Data Processing & Feature Engineering
-2. 
+
 - Loads a vehicle dataset with fields like fuel type, fuel consumption, horsepower, and brand.
 - Engineers new features (e.g., Efficiency per HP) to better capture eco-performance.
 - Encodes categorical variables and standardizes numeric data for machine learning.
@@ -32,7 +33,7 @@ Uses Random Forest Classifier, trained with GridSearchCV for optimal performance
 Applies SMOTE oversampling to balance minority (eco-friendly) and majority classes.
 
 3. Output & Insights
-4. 
+
 Generates:
 - Classification report: Accuracy, Precision, Recall, F1 Score.
 - Confusion matrix and feature importance plot for interpretability.
@@ -41,6 +42,7 @@ Generates:
 - Explanation for the classification per car
 
 4. Model Deployment
+   
 Saves trained model and encoders (eco_friendly_model.pkl, label_encoders.pkl) for future reuse or API integration.
 
 👤 Target Audience
