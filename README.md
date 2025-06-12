@@ -1,7 +1,65 @@
-# greengear
+# Green Gear 🌱
+
+Smart Vehicle Classification for a Greener Tomorrow
 
 # Project Overview:
-This program leverages machine learning to classify vehicles as eco-friendly or not, based on key features like fuel type, fuel consumption, and horsepower. By identifying vehicles that meet eco-friendly criteria, it supports consumers in making sustainable choices and assists automotive businesses and researchers in tracking and improving eco-friendly offerings. The model analyzes data, generates predictions, and provides actionable insights to promote environmentally conscious transportation solutions.
+The transportation sector accounts for over 24% of global CO₂ emissions, with road vehicles being the largest contributor.
+(Source: International Energy Agency, 2023)
+
+Despite the rise of hybrid and electric vehicles, consumers and businesses still struggle to identify which cars are truly eco-friendly based on meaningful performance metrics — not just marketing. Current classification systems often lack consistency, transparency, or adaptability to user-specific needs. There is a pressing need for a data-driven tool that intelligently classifies vehicles based on emissions-related attributes, making sustainability more accessible and measurable.
+
+🌍 Why This Program Matters
+Green Gear helps bridge the gap between environmental responsibility and informed consumer choice by using machine learning to classify cars as eco-friendly based on real-world performance indicators like fuel consumption, engine power, and fuel type.
+
+This tool not only empowers eco-conscious consumers, but also supports automotive companies, market analysts, and policy researchers in tracking trends and improving sustainability efforts in the auto industry.
+
+⚙️ What the Program Does
+
+1. Data Processing & Feature Engineering
+- Loads a vehicle dataset with fields like fuel type, fuel consumption, horsepower, and brand.
+- Engineers new features (e.g., Efficiency per HP) to better capture eco-performance.
+- Encodes categorical variables and standardizes numeric data for machine learning.
+
+2. Eco-Friendly Classification
+
+Classifies vehicles as eco-friendly if:
+- Fuel type is Electric or Hybrid
+- Fuel consumption is ≤ 5 L/100 km
+- Horsepower is ≤ 150 HP
+
+Uses Random Forest Classifier, trained with GridSearchCV for optimal performance.
+Applies SMOTE oversampling to balance minority (eco-friendly) and majority classes.
+
+3. Output & Insights
+Generates:
+- Classification report: Accuracy, Precision, Recall, F1 Score.
+- Confusion matrix and feature importance plot for interpretability.
+- Outputs a CSV file (eco_friendly_cars.csv) with:
+- Eco-friendly prediction (Yes/No)
+- Explanation for the classification per car
+
+4. Model Deployment
+Saves trained model and encoders (eco_friendly_model.pkl, label_encoders.pkl) for future reuse or API integration.
+
+👤 Target Audience
+Eco-Conscious Consumers
+→ Helps users filter car options based on real-world environmental impact.
+
+Automotive Manufacturers & Product Teams
+→ Gain data-driven insights on what features correlate with eco-friendliness.
+
+Market Researchers & Analysts
+→ Track trends in fuel efficiency and sustainability across brands and segments.
+
+Policymakers & Sustainability Advocates
+→ Use the tool as a model for developing or evaluating green vehicle incentives.
+
+📌 Key Applications
+🚗 Consumer Guidance: Provide sustainability labels to cars on dealership platforms.
+
+📈 Market Research: Analyze which brands and fuel types are evolving toward greener standards.
+
+🛠️ Product Design: Inform R&D on which engine specs align with environmental benchmarks.
 
 
 # Technical Overview:
